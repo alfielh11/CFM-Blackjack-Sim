@@ -1,3 +1,10 @@
+# Creators
+Alfie Harrison - BSc Financial Mathematics
+Ben Griffiths-Johnson - BSc Financial Mathematics
+Max Aira - BSc Financial Mathematics
+Sean Howell - BSc Financial Mathematics
+
+
 # Blackjack
 
 Below you will find the tutorial and how to section, as well as clear explanations and references to our Blackjack project
