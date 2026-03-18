@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage{listings}
+\usepackage{graphicx}
+
+\title{Blackjack}
+\author{Ben Griffiths-Johnson, Alfie Harrison, Sean Howell, Max Aira }
+\date{5th April 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    This paper introduces the Blackjack game using Python as well as the random library to simulate card drawing and shuffling mechanisms. 
+    
+    This project utilises key features such as loops, functions, and data structures to create an interactive game for someone to play.
+\end{abstract}
+
+\section{Introduction}
+Black jack is a casino style card game between the player and the dealer. It uses a standard deck of 52 cards and the first game was recorded in France in 1888 [*1]. 
+
+
+The game starts off by the dealer shuffling the cards and handing out two cards to both player and the dealer showing one of the dealers cards.
+
+
+1. Firstly, the player has the choice to hit or stand with the cards given to them. This is determined by whether they are close to 21 or not. Generally speaking, most people decide to stand on anything over 16.
+
+
+2. If the player chooses to hit, the process repeats until they either go bust (over 21) or stand . This is followed by the dealer's turn where it is the exact same as the player, however they have to stand on 17 or higher.
+
+
+3. To win the game you will have the closest number to 21 or 21 but not exceeding it. If the game is a draw both player and dealer receive their money back.
+
+The random library allows us to draw a card from the randomly shuffled deck, which in-turn removes cards from the deck and adds cards to the player and dealer's hands. 
+For example, we have used it below to simulate this shuffling of cards:
+
+\begin{lstlisting}
+    import random
+    
+    def deal_card(hand, deck):
+    card = random.choice(deck)
+    hand.append(card)
+    deck.remove(card)
+    
+\end{lstlisting}
+
+\section{Statement of need}
+The Random library is crucial in coding a game of Blackjack as it ensures the complete randomness of the cards dealt. This is significant as Blackjack is a fair game, where any given game at any given time should be fair, no matter who plays. Furthermore, the Random library allows for loops, which allows for the game to be replayed. Despite the coding of the game needing problem-solving skills as well as resilience, Blackjack is a family friendly game that can be played by all. 
+
+
+The statistics in figure 1 represents win/loss earnings through 1000 games of Blackjack.
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=7cm]{bjak.png}
+    \caption{}
+    \label{fig:}
+\end{figure}
+
+\section{Conclusion}
+This paper has presented a Python-based simulation of Blackjack, leveraging the
+\texttt{random} library to replicate the core mechanics of card shuffling and dealing.
+Through the implementation of loops, functions, and data structures, a simple yet functional
+version of the game was created that models player-dealer interactions in a fair and
+reproducible manner. While the current version reflects a basic rule set, the modular nature of
+the code provides a solid foundation for future expansions such as betting systems, card
+counting simulations, or multiplayer functionality. The use of Python allows this
+implementation to be accessible and easily modified for educational or recreational purposes.
+
+\section{References}
+[1*] https://en.wikipedia.org/wiki/Blackjack
+
+https://inventwithpython.com/bigbookpython/project4.html
+
+https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
+
+
+
+
+
+
+
+
+\end{document}
