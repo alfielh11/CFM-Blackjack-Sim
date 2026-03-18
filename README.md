@@ -1,8 +1,11 @@
 # Creators
-Alfie Harrison - BSc Financial Mathematics
-Ben Griffiths-Johnson - BSc Financial Mathematics
-Max Aira - BSc Financial Mathematics
-Sean Howell - BSc Financial Mathematics
+
+| Name | Course |
+| --- | --- |
+| Alfie Harrison | BSc Financial Mathematics |
+| Ben Griffiths-Johnson | BSc Financial Mathematics |
+| Max Aira | BSc Financial Mathematics |
+| Sean Howell | BSc Financial Mathematics |
 
 
 # Blackjack
